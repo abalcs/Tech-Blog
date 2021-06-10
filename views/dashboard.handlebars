@@ -1,4 +1,4 @@
-
+{{!-- 
     <div class="mb-5 pt-3">
         <a href="/dashboard/create/"><button id="create-post" class="button is-primary is-pulled-right">create post</button></a>
         
@@ -16,4 +16,12 @@
 {{else}}
 <h6 class="pb-4 has-text-centered is-italic">you do not currently have any posts</h6>
 
-{{/if}}
+{{/if}} --}}
+
+<h1><strong>Recent Posts</strong></h1>
+<ol>
+{{#each posts as |post|}}
+<h2>{{post.title}}</h2><hr>
+<li>{{post.post_content}}</li>
+{{/each}}
+</ol>
