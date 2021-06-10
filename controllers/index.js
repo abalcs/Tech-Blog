@@ -5,8 +5,12 @@ const homeRoutes = require('./homeRoutes');
 const dashboardRoutes = require('./dashboardRoutes')
 
 router.use('/api', apiRoutes);
-router.use('/dashboard', dashboardRoutes)
+// router.use('/dashboard', dashboardRoutes)
 router.use('/', homeRoutes);
+
+router.get('/dashboard', (req, res) => {
+  res.render('dashboard');
+});
 
 router.use((req, res) => {
   res.status(404).end();
