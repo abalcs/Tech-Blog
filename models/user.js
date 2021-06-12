@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt');
-const { beforeCreate, beforeUpdate } = require('./comment');
+const { beforeCreate, beforeUpdate, beforeBulkCreate } = require('./comment');
 
 // create our User model
 class User extends Model {
@@ -48,6 +48,11 @@ User.init(
             async beforeUpdate(updatedUserData) {
                 updatedUserData.password = await bcrypt.hash(updatedUserData.password, 10);
                 return updatedUserData;
+            },
+            async beforeBulkCreate(users) {
+                for (const user of users) {
+                    user.password = await bcrypt.hash(user.password, 10);
+                }
             }
         },
         sequelize,
