@@ -1,15 +1,14 @@
 
-<div>
-    <div >
+<div class="card border-success rounded ms-3" style="max-width: 50rem;">
+    <div class="card-header border-success text-white bg-primary" style="max-width: 50rem;">
         <a href="/post/{{id}}">{{title}} </a></p>
     </div>
-</div>
 
-<div>
-    {{post_content}}
-</div>
-<div>
-    <b>{{user.username}}</b> | 
-         {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
-</div>
+    <div class="card-header bg-light border-success text-dark ms-1">
+        {{post_content}}
+    </div>
+    <div class="ms-5">
+        <b>{{user.username}}</b> | 
+            {{format_date created_at}} | <a href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+    </div>
 </div>

@@ -1,19 +1,19 @@
 
-    <div class="mb-5 pt-3">
+    <div class="mb-4 pt-3">
         <h2 class="title pb-4 mt-4 ms-2">Your posts</h2><hr>
         <a href="/dashboard/create/"><button id="create-post" class="btn-info ms-2 p-1 rounded" style="width: 100px; color: white;">create post</button></a>
         
 {{#if posts.length}}
     </div>
-
-    {{#each posts as |post|}}
-        {{> post-info post}}
+        <div class="card-header border-success text-dark rounded" style="max-width: 50rem;">
+            {{#each posts as |post|}}
+            {{> post-info post}}
         
-            <a href="/dashboard/edit/{{post.id}}"><button class="button mb-5 ml-5 is-warning">Edit post</button></a>
+            <a href="/dashboard/edit/{{post.id}}"><button class="btn-info ms-2 p-1 rounded mt-4" style="width: 100px; color: white;">Edit post</button></a>
         </div>
     {{/each}}
 
 {{else}}
-<h6 class="pb-4 has-text-centered is-italic ms-2 mt-2" style="font-weight: bold;">you do not currently have any posts :(</h6>
+<h6 class="ms-2 mt-2" style="font-weight: bold;">you do not currently have any posts :(</h6>
 
 {{/if}}
