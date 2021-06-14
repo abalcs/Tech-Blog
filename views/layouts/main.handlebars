@@ -17,7 +17,7 @@
                     <a href="/" style="text-decoration: none;"><li style="padding-left: 10px; color: white;">Home</li></a>
                     <a href="/dashboard" style="text-decoration: none;"><li style="padding-left: 10px; color: white;">Dashboard</li></a>
                     {{#if loggedIn}}
-                        <a href="/logout" style="text-decoration: none;"><li style="padding-left: 10px; color: white;">Log Out</li></a>
+                        <a style="text-decoration: none;"><li style="padding-left: 10px; color: white;"><button id="logout">Log Out</button></li></a>
                         {{else}}
                         <a href="/signup" style="text-decoration: none;"><li style="padding-left: 10px; color: white;">Sign Up</li></a>
                         <a href="/login" style="text-decoration: none;"><li style="padding-left: 10px; color: white;">Login</li></a>
@@ -59,7 +59,7 @@
     </footer>
     
     {{#if loggedIn}}
-        <script src="/public/javascript/logout.js"></script>
+        <script src="/javascript/logout.js"></script>
     {{/if}}
 
 
