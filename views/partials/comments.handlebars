@@ -1,11 +1,11 @@
 
-<div class="comments">
+<div class="card-header border-success text-light bg-dark rounded ms-3" style="max-width: 50rem;">
   {{#each this}}
   <section class="comment">
-    <div class="meta">
+    <div class="ms-3">
       {{user.username}} on {{format_date created_at}}
     </div>
-    <div class="text">
+    <div class="ms-3">
       {{comment_text}}
     </div>
   </section>

@@ -5,11 +5,11 @@
         
 {{#if posts.length}}
     </div>
-        <div class="card-header border-success text-dark rounded" style="max-width: 50rem;">
+        <div>
             {{#each posts as |post|}}
             {{> post-info post}}
         
-            <a href="/dashboard/edit/{{post.id}}"><button class="btn-info ms-2 p-1 rounded mt-4" style="width: 100px; color: white;">Edit post</button></a>
+            <a href="/dashboard/edit/{{post.id}}"><button class="btn-info ms-2 p-1 rounded mt-3" style="width: 100px; color: white;">Edit post</button></a>
         </div>
     {{/each}}
 
