@@ -2,8 +2,10 @@ async function newFormHandler(event) {
     event.preventDefault();
   
     const title = document.querySelector('input[name="post-title"]').value;
+    //if change input to textarea, make sure changes below too
     const post_content = document.querySelector('input[name="post-content"]').value;
-  
+    console.log(post_content)
+    console.log(title)
     const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({

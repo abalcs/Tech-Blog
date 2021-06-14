@@ -2,9 +2,9 @@ const router = require('express').Router();
 const sequelize = require('sequelize');
 const { Post, User, Comment } = require('../models');
 
-router.get('/dashboard', (req, res) => {
-    res.render('dashboard');
-  });
+// router.get('/dashboard', (req, res) => {
+//     res.render('dashboard');
+//   });
 
 router.get('/', (req, res) => {
     console.log(req.session);
@@ -35,7 +35,7 @@ router.get('/', (req, res) => {
         const posts = dbPostData.map(post => post.get({ plain: true }));
         res.render('homepage', {
             posts,
-            // loggedIn: req.session.loggedIn
+            loggedIn: req.session.loggedIn
         });
     })
     .catch(err => {
