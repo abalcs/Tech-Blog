@@ -14,7 +14,9 @@
 ## Description:
 ![License](https://img.shields.io/badge/License-ISC-blue.svg "License Badge")
 
-This app was made with JavaScript, MYSQL, Sequelize, Express, Handlebars.js, Bootstrap, and Node.js.  
+This app was made with JavaScript, MYSQL, Sequelize, Express, Handlebars.js, Bootstrap, and Node.js.
+
+[Tech-Blog-Image](public/img/techblog.png)
 
 [Link to Deployed App]()
 
