@@ -1,13 +1,16 @@
 
 <div class="card-header border-success text-light bg-dark rounded ms-3" style="max-width: 50rem;">
   {{#each this}}
-  <section class="comment">
+  <section class="bg-secondary">
+
     <div class="ms-3">
       {{user.username}} on {{format_date created_at}}
     </div>
-    <div class="ms-3">
+    
+    <div class="ms-3 mt-2">
       {{comment_text}}
     </div>
+    <hr>
   </section>
   {{/each}}
 </div>
