@@ -18,7 +18,7 @@ This app was made with JavaScript, MYSQL, Sequelize, Express, Handlebars.js, Boo
 
 ![Tech-Blog-Image](public/img/techblog.png)
 
-[Link to Deployed App]()
+[Link to Deployed App](https://glacial-badlands-18828.herokuapp.com/login)
 
 ## Installation:
 n/a
