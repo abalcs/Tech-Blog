@@ -16,7 +16,7 @@
 
 This app was made with JavaScript, MYSQL, Sequelize, Express, Handlebars.js, Bootstrap, and Node.js.
 
-[Tech-Blog-Image](public/img/techblog.png)
+![Tech-Blog-Image](public/img/techblog.png)
 
 [Link to Deployed App]()
 
