@@ -38,6 +38,8 @@ Swetha Reddivari [Github](https://github.com/swethareddyl/E-Commerce_Backend)
 ## License:
 For more information about the License, click on the link below.
 
+## Issues:
+Deleting a post generates an "internal server error" for posts that have been modified from their original state.
 
 - [License](https://opensource.org/licenses/ISC)
 
